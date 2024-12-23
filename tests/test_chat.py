@@ -5,7 +5,7 @@ from llamaedge.client import Client
 
 class TestChat(unittest.TestCase):
     def test_chat(self):
-        client = Client(server_base_url="http://localhost:12306")
+        client = Client(server_base_url="http://localhost:8080")
         response = client.chat(
             messages=[{"role": "user", "content": "What is the capital of France?"}]
         )
