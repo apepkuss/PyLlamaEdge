@@ -1,11 +1,5 @@
 from setuptools import find_packages, setup
 
-# Add these lines at the top
-with open("requirements.txt") as f:
-    requirements = [
-        line.strip() for line in f if line.strip() and not line.startswith("#")
-    ]
-
 setup(
     name="llamaedge",
     version="0.1.0",
