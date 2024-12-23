@@ -7,15 +7,15 @@ setup(
     install_requires=[
         # 在这里添加依赖
     ],
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="一个示例Python库",
+    author="Liu Xin",
+    author_email="xin.sam.liu@hotmail.com",
+    description="Python library for LlamaEdge",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/my_library",
+    url="https://github.com/apepkuss/PyLlamaEdge",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.11",
