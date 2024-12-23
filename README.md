@@ -1,5 +1,3 @@
-# My Library
+# PyLlamaEdge
 
-这是一个示例Python库。
-
-## 安装
+This is a Python library for LlamaEdge.
