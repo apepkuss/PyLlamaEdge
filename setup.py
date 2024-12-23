@@ -21,4 +21,6 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     python_requires=">=3.11",
+    include_package_data=True,
+    zip_safe=False,
 )
