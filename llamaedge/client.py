@@ -5,6 +5,10 @@ import requests
 
 
 class Client:
+    """
+    A client for the LlamaEdge API
+    """
+
     def __init__(self, server_base_url: str = "http://localhost:8080"):
         self.server_base_url = server_base_url
 
@@ -98,3 +102,34 @@ class Client:
                 )
 
             return json_response["text"]
+
+
+class Message:
+    """
+    A message in a chat conversation
+    """
+
+    def __init__(self, role: str, content: str):
+        """
+        Create a message
+
+        :param role: The role of the message. Possible values are "system", "user" and "assistant".
+        :param content: The content of the message
+        """
+        self._role = role
+        self._content = content
+
+    @property
+    def role(self) -> str:
+        return self._role
+
+    @property
+    def content(self) -> str:
+        return self._content
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {"role": self._role, "content": self._content}
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "Message":
+        return cls(data["role"], data["content"])
